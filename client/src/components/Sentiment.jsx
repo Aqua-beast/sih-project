@@ -5,17 +5,28 @@ const SentimentAnalysis = () => {
   const [text, setText] = useState('');
   const [sentimentScore, setSentimentScore] = useState(0);
   const [sentimentResult, setSentimentResult] = useState('');
+  const [filteredText, setfilteredText] = useState('');
 
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
-  const analyzeSentiment = () => {
+  const analyzeSentiment = async() => {
+    let senti=await fetch('https://api.api-ninjas.com/v1/profanityfilter?text='+text,
+    {
+      headers:{
+        'X-Api-Key': 'uq0STJbLSyaIRorXvhLHVQ==0uUbsiQZsBMmFpHX'
+      }
+    })
+
     const sentiment = new Sentiment();
     const analysis = sentiment.analyze(text);
 
     setSentimentScore(analysis.score);
     setSentimentResult(analysis.score > 0 ? 'Positive' : analysis.score < 0 ? 'Negative' : 'Neutral');
+    console.log(sentiment)
+    let res=await senti.json()
+    setfilteredText(res.censored)
   };
 
   return (
@@ -36,7 +47,14 @@ const SentimentAnalysis = () => {
             Sentiment Score: {sentimentScore} ({sentimentResult})
           </p>
         </div>
+        
       )}
+      <div>
+          <h3>Filtered Text:</h3>
+          <p>
+            {filteredText}
+          </p>
+        </div>
     </div>
   );
 };
