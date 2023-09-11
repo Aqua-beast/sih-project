@@ -1,0 +1,317 @@
+/**************GOOGLE FONTS******************/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Bree+Serif&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
+
+/**************COLORS******************/
+:root{
+   
+    --first-color:#0C356A;
+    --h1-color: #279EFF;
+    --title-color: #40F8FF;
+    --container-color:#D5FFD0;
+    --body-color: #fbfbfe;
+    --text-color: #6d6a7c;
+    --body-font:'Poppins', sans-serif;
+    --big-font-size:2.8rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.948rem;
+    --small-font-size:.813rem;
+    --small-font-size:.75rem;
+
+} 
+/* font sizes for large Devices */
+@media screen and(min-width:968px){
+    :root{
+        --big-font-size:4rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --small-font-size:.813rem;
+    } 
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR STYLING STARTS FROM HERE */
+.navbar {
+    background-color: #212A3E;
+    padding: 1rem .5rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-brand:hover {
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 4rem;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.08rem;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+
+  /* IntroComponent.css */
+  /* for starting page */
+  .bg {
+    background: linear-gradient(#93A5CF, #E4EfE9);
+    height: 100vh;
+  }
+
+.intro-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-heading {
+  margin-top: 5rem;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.intro-description {
+  font-size: 1.2rem;
+  text-align: center;
+  background: linear-gradient(#0084A3, #87ceea);
+  padding: 2rem;
+  margin: 4rem 12rem 2rem 12rem;
+  width: 50%;
+  height: auto;
+}
+
+.home-button {
+  background-color: #394867;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background-color: #212A3E; 
+}
+
+.intro-footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 10px 0;
+  background-color: #212A3E; 
+  color: white; 
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .intro-heading {
+    margin-bottom: 0.5rem;
+  }
+
+  .intro-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .home-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+  /* RESPONSE BOX STYLING */
+.response-box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.flex{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2rem;
+    padding: 5rem 1.5rem;
+}
+.emotions{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pr-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: .7;
+}
+.progressBar{
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    margin: 1.2rem;
+}
+
+.res-text{
+    margin-top: 2.5rem;
+    color:rgb(6, 153, 131) ;
+    font-size: var(--big-font-size);
+}
+
+.res-filter-text {
+  color: var(--first-color);
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  background-color: var(--container-color);
+}
+
+@media screen and (max-width: 1270px){
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* CHATTING NAVBAR */
+/* ChatNavbar CSS */
+.chat-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #088b7c; 
+  color: #ffffff;
+  right: 0;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-navbar-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact-info span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-icons .fa {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+/* SENTIMENT STYLING STARTS FROM HERE */
+.sentiment-box{
+    background-color: #F1F6F9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem 2rem .5rem 2rem;
+    border-radius: 5px;
+    border: solid black 2px;
+    margin: 0rem 1rem;
+}
+.chats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-chats{
+    margin-right: 30rem;
+}
+.right-chats{
+    margin-left: 30rem;
+}
+.chat1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 15rem;
+    height: 100%;
+    padding: 10px;
+}
+.left-chats .chat1{
+    margin: 5rem 0;
+    background-color: #212A3E;
+    color: white;
+}
+.right-chats .chat1{
+    float: right;
+    margin-top: 3rem;
+    background-color: #7EAA92;
+    color: white;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text-smile {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  color: white;
+}
+
+.button-whatsapp{
+    padding: 0.9rem;
+    background-color: #088b7c;
+    color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+textarea{
+    background: #088b7c;
+    color: var(--body-color);
+    border-radius: 5px;
+    font-size: var(--normal-font-size);
+    padding: 7px;
+    width: 100%;
+}

@@ -1,10 +1,17 @@
 import './App.css';
-import Sentiment from './components/Sentiment';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Doc from './pages/Doc'
 
 function App() {
   return (
     <div className="App">
-      <Sentiment />
+      <Router>
+        <Routes>
+          <Route path='/' exact element={<Doc />} />
+          <Route path='/home' element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
