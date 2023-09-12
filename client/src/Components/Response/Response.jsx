@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from './ProgressBar';
+import './Response.css';
 
 const Response = ({sentimentScore,sentimentResult, filteredText}) => {
 

@@ -1,0 +1,51 @@
+
+.intro-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .intro-heading {
+    margin-top: 7rem;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    color: var(--first-color);
+  }
+
+  .intro-box {
+    display: grid;
+  }
+  
+  .intro-description {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    background-color: #C4DDFF;
+    padding: 4rem;
+    margin: 4rem 12rem 2rem 12rem;
+    width: 50%;
+    height: auto;
+  }
+  
+  .home-button {
+    background-color: #001D6E;
+    font: bold;
+    color: #FEE2C5;
+    font-size: var(--h1-font-size);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+  }
+  
+  .home-button:hover {
+    background-color: #FEE2C5;
+    color: #001D6E;
+  }

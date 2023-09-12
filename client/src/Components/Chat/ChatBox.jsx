@@ -1,6 +1,7 @@
 import React from 'react'
 import ChatNavbar from './ChatNavbar'
 import {FaLocationArrow} from 'react-icons/fa'
+import './Chat.css'
 
 const ChatBox = ({text,analyzeSentiment,handleTextChange}) => {
   return (
@@ -36,7 +37,7 @@ const ChatBox = ({text,analyzeSentiment,handleTextChange}) => {
         value={text}
         onChange={handleTextChange}
       />
-      <button className='button-whatsapp' onClick={analyzeSentiment}><FaLocationArrow color='white' size={28}/></button>
+      <button className='button-whatsapp' onClick={analyzeSentiment}><FaLocationArrow className='rotator' color='white' size={28}/></button>
       </div>
     </div>
   )

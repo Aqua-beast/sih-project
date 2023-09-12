@@ -1,0 +1,67 @@
+.sentiment-box{
+    background-color: #F1F6F9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 3rem 2rem .5rem 2rem;
+    border-radius: 5px;
+    border: solid black 2px;
+    margin: 0rem 1rem;
+}
+.chats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-chats{
+    margin-right: 30rem;
+}
+.right-chats{
+    margin-left: 30rem;
+}
+.chat1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 22rem;
+    height: 100%;
+    padding: 10px;
+}
+.left-chats .chat1{
+    margin: 5rem 0;
+    background-color: #212A3E;
+    color: white;
+}
+.right-chats .chat1{
+    float: right;
+    margin-top: 3rem;
+    background-color: #FEE2C5;
+    color: black;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.text-smile {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  color: white;
+}
+
+.button-whatsapp{
+    padding: 0.9rem;
+    background-color: #001D6E;
+    color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+textarea{
+    background: rgb(198, 198, 198);
+    color: var(--body-color);
+    border-radius: 5px;
+    font-size: var(--normal-font-size);
+    padding: 7px;
+    width: 100%;
+}

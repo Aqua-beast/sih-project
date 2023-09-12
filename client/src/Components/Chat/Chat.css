@@ -1,0 +1,93 @@
+.chat-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #7FB5FF; 
+    color: #ffffff;
+    right: 0;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .chat-navbar-info {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .contact-info h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .contact-info span {
+    font-size: var(--h3-font-size);
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .menu-icons .fa {
+    font-size: var(--h3-font-size);
+    margin: 0 10px;
+  }
+
+
+   /* RESPONSE BOX STYLING */
+.response-box{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.flex{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2rem;
+    padding: 5rem 1.5rem;
+}
+.emotions{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pr-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: .7;
+}
+.progressBar{
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    margin: 1.2rem;
+}
+
+.res-text{
+    margin-top: 2.5rem;
+    color:rgb(6, 153, 131) ;
+    font-size: var(--big-font-size);
+}
+
+.res-filter-text {
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  margin-top: 1.5rem;
+  background-color: var(--container-color);
+}
+
+@media screen and (max-width: 1270px){
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.rotator {
+  transform: rotate(30deg);
+}
+
+.rotator:hover {
+  transform: rotate(40deg);
+  transition: transform 2s;
+}

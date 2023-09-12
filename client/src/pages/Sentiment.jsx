@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Sentiment from 'sentiment';
-import Response from './Response';
-import ChatBox from './ChatBox';
+import Response from '../Components/Response/Response';
+import ChatBox from '../Components/Chat/ChatBox';
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
 
 const SentimentAnalysis = () => {
   const [text, setText] = useState('');
@@ -32,10 +34,14 @@ const SentimentAnalysis = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className='flex'>
       <ChatBox text={text} analyzeSentiment={analyzeSentiment} sentimentScore={sentimentScore} sentimentResult={sentimentResult} handleTextChange={handleTextChange} />
       <Response sentimentScore={sentimentScore} sentimentResult={sentimentResult} filteredText={filteredText}/>
     </div>
+    <Footer />
+    </>
   );
 };
 

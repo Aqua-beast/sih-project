@@ -1,15 +1,34 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/**************GOOGLE FONTS******************/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Bree+Serif&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/**************COLORS******************/
+:root{
+    --first-color:#0C356A;
+    --h1-color: #279EFF;
+    --title-color: #40F8FF;
+    --container-color:#D5FFD0;
+    --body-color: #fbfbfe;
+    --text-color: #6d6a7c;
+    --body-font: "Bai Jamjuree", sans-serif;
+    --big-font-size:2.8rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.948rem;
+    --small-font-size:.813rem;
+    --small-font-size:.75rem;
+} 
 
+/* font sizes for large Devices */
+@media screen and(min-width:968px){
+    :root{
+        --big-font-size:4rem;
+        --h1-font-size:2.25rem;
+        --h2-font-size:1.5rem;
+        --h3-font-size:1.25rem;
+        --normal-font-size:1rem;
+        --small-font-size:.875rem;
+        --small-font-size:.813rem;
+    } 
+}

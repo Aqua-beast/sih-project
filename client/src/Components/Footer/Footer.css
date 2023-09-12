@@ -1,0 +1,33 @@
+.footer {
+    background-color: #C4DDFF;
+    padding: 1.2rem .5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--h3-font-size);
+}
+
+.footer-logo {
+    font-size: var(--h2-font-size);
+    text-decoration: none;
+    color: #001D6E;
+}
+
+.footer-social>* {
+    color: #001D6E;
+    margin-left: 3rem;
+}
+
+.footer-social>* :hover {
+    color: #3e3b3b;
+}
+
+.footer-bottom {
+    color: #001D6E;
+}
