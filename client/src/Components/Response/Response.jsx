@@ -16,7 +16,7 @@ const Response = ({sentimentScore,sentimentResult, filteredText}) => {
         </div>
 
         <div className='pr-1'>
-        <ProgressBar percent={30} text="30%" color="rgb(255, 0, 144);"/>
+        <ProgressBar percent={30} text="30%" color="rgb(255, 0, 144)"/>
           <p>Negatic</p>
         </div>
         <div className='pr-1'>
