@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
-import AboutComponent from '../Components/AboutComponent/AboutComponent'
+import Landing from '../Components/Landing/Landing'
 
-function About() {
+function Services() {
   return (
     <div>
       <Navbar />
-      <AboutComponent />
+      <Landing />
       <Footer />
     </div>
   )
 }
 
-export default About
+export default Services

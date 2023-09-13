@@ -1,0 +1,43 @@
+.contain {
+    margin-top: 6rem; 
+    padding: 1.5rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.head {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    font: bold;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.container-desc {
+    font-size: var(--h3-font-size);
+    color: var(--text-color)
+}
+
+.mission  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.values  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
