@@ -26,7 +26,7 @@ function GetStarted() {
                 <p className="intro-description">
                 Our powerful sentiment analysis engine dives deep into the social media chatter to <b>uncover the emotions</b> and opinions behind the trends. Know whether the world is buzzing with excitement, concern, or curiosity.
                 </p>
-            <a href='/' className="home-button">
+            <a href='/home' className="home-button">
                 Get Started <AiOutlineArrowRight />
             </a>
         </div>
