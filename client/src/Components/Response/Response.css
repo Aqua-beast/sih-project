@@ -1,15 +1,17 @@
 .sentiment-box{
-    background-color: #F1F6F9;
+    background-color: #F1F6F9 ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 3rem 2rem .5rem 2rem;
     border-radius: 5px;
-    border: solid black 2px;
-    margin: 0rem 1rem;
+    border: solid #001D6E 1.5px;
+    /* margin: 0rem 1rem; */
+    width: 55rem;
 }
 .chats{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .left-chats{
     margin-right: 30rem;

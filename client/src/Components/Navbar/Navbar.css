@@ -1,7 +1,7 @@
 /* NAVBAR STYLING STARTS FROM HERE */
 .navbar {
   background-color: #C4DDFF;
-  padding: 1.2rem .5rem;
+  padding: 1rem .5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,9 +16,13 @@
 }
 
 .navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: var(--h1-font-size);
   text-decoration: none;
   color: #001D6E;
+  
 }
 
 .navbar-brand:hover {
@@ -47,4 +51,8 @@
 
 .nav-item a:hover {
   text-decoration: underline;
+}
+
+.logoLastWord{
+  font-size: 1.8rem;
 }
